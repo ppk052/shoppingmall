@@ -6,7 +6,17 @@ spring:
   application:
     name: shoppingmall
 
-    ####################################
+  devtools:
+    restart:
+      enabled: true
+
+    livereload:
+      enabled: true
+
+  thymeleaf:
+    cache: false
+
+  ####################################
     # 데이터베이스설정
     ####################################
   datasource:
@@ -29,6 +39,12 @@ spring:
       hibernate:
         format_sql: true    # 포맷 처리해서 보이기. 한줄처리되어있는것을 여러줄로 보기좋게 설정
     database-platform: org.hibernate.dialect.MySQL8Dialect  # MySQL8 버전 사용
+
+  #로그인설정
+  security:
+    user:
+      name: test@test.com
+      password: 1111
 
 #쿼리에서 물음표로 출력되는 바인드를 추적해서 출력
 logging:

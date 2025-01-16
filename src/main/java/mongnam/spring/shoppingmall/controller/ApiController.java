@@ -11,11 +11,11 @@ import java.awt.*;
 @Slf4j
 public class ApiController {
 
-    @GetMapping("/")
+    /*@GetMapping("/")
     public UserDto index() {
         UserDto userDto = new UserDto(15,"Jack");
         log.info(userDto.toString());
         return userDto;
-    }
+    }*/
 
 }
